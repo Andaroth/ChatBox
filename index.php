@@ -9,7 +9,7 @@
     $DB = new PDO('mysql:host='.$dbhost.';dbname='.$dbname.';charset=utf8',$dbuser,$dbpass);
     $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   } catch(Exception $e) {
-    die('Error : '.$e->getMessage());
+    // die('Error : '.$e->getMessage());
   }
 ?>
 
