@@ -2,7 +2,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 CREATE TABLE `my_users` (
-  `ID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `username` text COLLATE utf8_bin NOT NULL,
   `mail` text COLLATE utf8_bin NOT NULL,
   `pass` text COLLATE utf8_bin NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `shoutbox` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 ALTER TABLE `my_users`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `shoutbox`
   ADD PRIMARY KEY (`id`);
