@@ -13,7 +13,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="view/css/style.css">
+    <link rel="stylesheet" href="./View/css/style.css">
     <title>Login</title>
   </head>
 
