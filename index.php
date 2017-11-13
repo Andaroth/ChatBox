@@ -1,9 +1,12 @@
 <?php 
+  define('Model', 'Model/');
   define('View', 'View/');
   define('Controller', 'Controller/');
 
+  require_once Model . 'global.php';
+
   try {
-    $DB = new PDO('mysql:host=localhost;dbname=ChatBox;charset=utf8','root','user');
+    $DB = new PDO('mysql:host='.$dbhost.';dbname='.$dbname.';charset=utf8',$dbuser,$dbpass);
     $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   } catch(Exception $e) {
     die('Error : '.$e->getMessage());
