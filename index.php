@@ -1,4 +1,5 @@
-<?php 
+<!DOCTYPE html>
+ <?php 
   define('Model', 'Model/');
   define('View', 'View/');
   define('Controller', 'Controller/');
@@ -12,7 +13,6 @@
     // die('Error : '.$e->getMessage());
   }
 ?>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
