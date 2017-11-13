@@ -22,8 +22,8 @@
         $_SESSION['username'] = $res['username'];
         echo "You are now Logged in. Click <a href='index.php'>here</a> to go back to main chat window.";
       } else {
-        echo "No user found. Please go <a href='index.php'>back</a> and enter the correct login.<br>";
-        echo "You may register a new account by clicking <a href='register.php'>here</a>.";
+        echo "No user found. Please go <a href='./'>back</a> and enter the correct login.<br>";
+        echo "You may register a new account by clicking <a href='./?page=register'>here</a>.";
       }
     ?>
   </body>

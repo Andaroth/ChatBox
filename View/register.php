@@ -24,13 +24,13 @@
             echo "Username already exists, Please select other username.<br>";
           } else {
             mysql_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
-            echo "You are now registered. Click <a href='index.php'>here</a> to start chatting";
+            echo "You are now registered. Click <a href='./'>here</a> to start chatting";
           }
         }
       }
     ?>
 
-    <form name="form1" action="register.php" method="post">
+    <form name="form1" action="./?page=register" method="post">
       <table border="1" align="center">
         <tr>
           <td>Enter your Username: </td>
