@@ -28,6 +28,9 @@
           include(Controller . 'chatController.php');
           $controller = new chatController();
           break;
+        case 'register':
+          include(Controller . 'registerController.php');
+          $controller = new registerController();   
         default:
           include(Controller . 'loginController.php');
           $controller = new loginController();
