@@ -42,5 +42,6 @@
       }
       $controller->run();
     ?>
+    <script type="text/javascript" src="views/js/app.js"></script>
   </body>
 </html>
