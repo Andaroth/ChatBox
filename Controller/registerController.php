@@ -1,5 +1,5 @@
 <?php
-  class loginController {
+  class registerController {
   public function __construct(){
       /*private function addUser($username,$mail,$pass) { 
     global $db; 
