@@ -32,6 +32,10 @@
         $alertMsg = "Mot de passe ou nom d'utilisateur incorrect !";   
       }
     }
+    // logout
+    if ( (isset($_GET['deco'])) && ($_GET['deco'] == "Se déconnecter")) {
+        session_destroy();
+    }
   }
   public function run(){
     global $alertMsg;
