@@ -12,6 +12,7 @@
     case 'register':
       include(Controller . 'registerController.php');
       $controller = new registerController();   
+      break;
     default:
       include(Controller . 'loginController.php');
       $controller = new loginController();
