@@ -23,6 +23,6 @@
 
   <body>
     <?php require_once Controller . 'routerController.php'; ?>
-    <script type="text/javascript" src="views/js/app.js"></script>
+    <script type="text/javascript" src="./View/js/app.js"></script>
   </body>
 </html>
