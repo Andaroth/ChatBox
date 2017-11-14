@@ -1,4 +1,6 @@
-<div>
+<div class="wrapper">
+    <div class="card">
+    <div>
       <h2>Se connecter</h2>
       <p><?php echo $alertMsg; ?></p>
       <form action="./?page=login" method="post">
@@ -14,4 +16,6 @@
         </div>
         <input type="submit" value="Connexion">
       </form>
+    </div>
+    </div>
     </div>
