@@ -2,7 +2,7 @@
     <div class="card">
     <div>
       <h2>S'inscrire</h2>
-      <p><?php echo $alertMsg; ?></p>
+      <p class="alert"><?php echo $alertMsg; ?></p>
       <form action="./?page=register" method="post" autocomplete="off">
       <div class="twocol">
         <!--<div>
@@ -18,7 +18,7 @@
           <input class="clearform" type="password" name="passTwo" id="register_passTwo" autocomplete="off" placeholder="password (again)">
         </div>
       </div>
-      <input type="submit" class="submit" value="Inscription">
+      <input type="submit" class="submit" name="submit" value="Inscription">
       </form>
       <a href="./">&larr; retour</a>
     </div>

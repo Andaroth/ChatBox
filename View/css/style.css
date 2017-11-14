@@ -97,6 +97,9 @@ p {
   width: 100%;
   font-size: 1.3em;
 }
+p.alert {
+    text-align: center;
+}
 
 label {
   visibility: hidden;
