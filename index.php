@@ -4,17 +4,10 @@
   define('Model', 'Model/');
   define('View', 'View/');
   define('Controller', 'Controller/');
-
   require_once Model . 'global.php';
   require_once Model . 'functions.php';
-  try {
-    $DB = new PDO('mysql:host='.$dbhost.';dbname='.$dbname.';charset=utf8',$dbuser,$dbpass);
-    $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  } catch(Exception $e) {
-    die('Error : '.$e->getMessage());
-  }
 ?>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./View/css/style.css">

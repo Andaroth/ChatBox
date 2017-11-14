@@ -16,4 +16,17 @@
       return $try;
     } catch(Exception $e) {echo("Error getUserById : ".$e->getMessage());die();}
   }
+
+  function getChatPost() {
+    global $getChat;
+    foreach ($getChat as $thisQuery) 
+    { // Exécuter $getNews sous le tableau $thisQuery
+      $c_author = "<b>".ucfirst(htmlspecialchars(getUserById($thisQuery["user_id"])))."</b>";
+      $c_message = htmlspecialchars($thisQuery["message"]);
+      $c_date = "<i>".$thisQuery["datepost"]."</i>";
+      echo 
+      "       <p class=\"chatmsg\">"."<span class=\"chatdate\">[".$c_date."]</span> ".$c_author." > ".$c_message."</p>
+      ";
+    }
+  }
 ?>

@@ -1,7 +1,8 @@
 <div>
-  <h2>S'inscrire</h2>
-  <form action="./?page=register" method="post" autocomplete="off">
-    <div class="twocol">
+      <h2>S'inscrire</h2>
+      <p><?php echo $alertMsg; ?></p>
+      <form action="./?page=register" method="post" autocomplete="off">
+      <div class="twocol">
         <div>
           <label for="register_username">Nom d'utilisateur</label>
           <label for="register_mail">Votre e-mail</label>
@@ -14,7 +15,7 @@
           <input class="clearform" type="password" name="passOne" id="register_passOne" autocomplete="off" placeholder="password">
           <input class="clearform" type="password" name="passTwo" id="register_passTwo" autocomplete="off" placeholder="password (again)">
         </div>
+      </div>
+      <input type="submit" value="Inscription">
+      </form>
     </div>
-    <input type="submit" value="Inscription">
-  </form>
-</div>
