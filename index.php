@@ -1,5 +1,6 @@
 <!DOCTYPE html>
  <?php 
+  session_start();
   define('Model', 'Model/');
   define('View', 'View/');
   define('Controller', 'Controller/');

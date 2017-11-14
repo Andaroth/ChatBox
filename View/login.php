@@ -1,5 +1,5 @@
 <?php
-  session_start();
+  /*session_start();
   $username = $_POST['username'];
   $password = $_POST['password'];
 
@@ -15,5 +15,22 @@
   } else {
     echo "No user found. Please go <a href='./'>back</a> and enter the correct login.<br>";
     echo "You may register a new account by clicking <a href='./?page=register'>here</a>.";
-  }
+  }*/
 ?>
+  <div>
+    <h2>Se connecter</h2>
+    <p><?php echo $alertMsg; ?></p>
+    <form action="./?page=login" method="post">
+      <div class="twocol">
+        <div>
+          <label for="login_username">Nom d'utilisateur</label>
+          <label for="login_pass">Mot de passe</label>
+        </div>
+        <div>
+          <input class="clearform first inputupper" type="text" name="username" id="login_username" placeholder="username">
+          <input class="clearform" type="password" name="pass" id="login_pass" placeholder="password">
+        </div>
+      </div>
+      <input type="submit" value="Connexion">
+    </form>
+  </div>

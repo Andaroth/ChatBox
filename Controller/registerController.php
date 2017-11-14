@@ -11,5 +11,4 @@
   public function run(){
     include View . 'register.php';
   }
- }
 ?>
