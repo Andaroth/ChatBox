@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <?php require_once Controller . 'routerController.php'; ?>
+    <?php include Controller . 'routerController.php'; ?>
     <script type="text/javascript" src="./View/js/app.js"></script>
   </body>
 </html>

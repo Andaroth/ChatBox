@@ -36,7 +36,7 @@
       $username = strtolower(trim(htmlspecialchars($_POST["username"])));
       $mail = $_POST["mail"];
       $pass = hash("sha256", htmlspecialchars($_POST["passOne"]));
-      $select = $db->query("SELECT COUNT(username) AS count FROM my_users WHERE username = '".$username."'");
+      $select = $DB->query("SELECT COUNT(username) AS count FROM my_users WHERE username = '".$username."'");
       $row = $select->fetch();
       $count = $row['count'];
         
