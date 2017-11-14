@@ -33,7 +33,6 @@
       } catch(Exception $e) {echo("Error addChat : ".$e->getMessage());die();}
     }
     */ 
-  } 
   }
   public function run(){
     include View . 'chat.php';
