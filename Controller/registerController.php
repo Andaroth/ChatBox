@@ -1,7 +1,8 @@
 <?php
   class registerController {
   public function __construct(){
-  
+    global $DB;
+      
     $fail = 0;
     if (!(isset($_POST["username"]))) {
       $alertMsg = "username undefined";
