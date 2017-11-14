@@ -3,33 +3,36 @@
     public function __construct(){
       global $DB, $alertMsg;
       $fail = 0;
-      if (!(isset($_POST["username"]))) {
-        $alertMsg = "username undefined";
-        $fail++;
-      } else if (trim(($_POST["username"])) == "") {
-        $alertMsg = "Entre ton nom";
-        $fail++;
-      } else if (!(isset($_POST["mail"]))) {
-        $alertMsg = "Entre ton mail";
-        $fail++;
-      } else if (!(filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL))) {
-        $alertMsg = "Format de mail invalide";
-        $fail++;
-      } else if (!(isset($_POST["passOne"]))) {
-        $alertMsg = "Entre ton mot de passe deux fois";
-        $fail++;
-      } else if (!(isset($_POST["passTwo"]))) {
-        $alertMsg = "Entre ton mot de passe deux fois";
-        $fail++;
-      } else if ($_POST["passOne"] == "") {
-        $alertMsg = "Entre ton mot de passe deux fois";
-        $fail++;  
-      } else if ($_POST["passTwo"] == "") {
-        $alertMsg = "Entre ton mot de passe deux fois";
-        $fail++;
-      } else if ($_POST["passOne"] != $_POST["passTwo"]) {
-        $alertMsg = "Les mots de passes ne correspondent pas";
-        $fail++;
+      
+      if (isset($_POST['submit'])) {
+        if (!(isset($_POST["username"]))) {
+          $alertMsg = "username undefined";
+          $fail++;
+        } else if (trim(($_POST["username"])) == "") {
+          $alertMsg = "Entre ton nom";
+          $fail++;
+        } else if (!(isset($_POST["mail"]))) {
+          $alertMsg = "Entre ton mail";
+          $fail++;
+        } else if (!(filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL))) {
+          $alertMsg = "Format de mail invalide";
+          $fail++;
+        } else if (!(isset($_POST["passOne"]))) {
+          $alertMsg = "Entre ton mot de passe deux fois";
+          $fail++;
+        } else if (!(isset($_POST["passTwo"]))) {
+          $alertMsg = "Entre ton mot de passe deux fois";
+          $fail++;
+        } else if ($_POST["passOne"] == "") {
+          $alertMsg = "Entre ton mot de passe deux fois";
+          $fail++;  
+        } else if ($_POST["passTwo"] == "") {
+          $alertMsg = "Entre ton mot de passe deux fois";
+          $fail++;
+        } else if ($_POST["passOne"] != $_POST["passTwo"]) {
+          $alertMsg = "Les mots de passes ne correspondent pas";
+          $fail++;
+        }
       }
     
       if ($fail==0) {
