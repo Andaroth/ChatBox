@@ -1,5 +1,6 @@
 <div>
       <h2>S'inscrire</h2>
+      <p><?php echo $alertMsg; ?></p>
       <form action="./?page=register" method="post" autocomplete="off">
       <div class="twocol">
         <div>
