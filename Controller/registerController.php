@@ -1,8 +1,7 @@
 <?php
   class registerController {
   public function __construct(){
-    global $DB;
-      
+    global $DB, $alertMsg;
     $fail = 0;
     if (!(isset($_POST["username"]))) {
       $alertMsg = "username undefined";
@@ -47,12 +46,11 @@
         $_SESSION["logged"] = 1;
         $_SESSION["username"] = $username;
         $_SESSION["user_id"] = intval(getUserId($username));
-        echo "Bonjour ".ucfirst($username).", tu peux maintenant "; 
-        echo '<a href="./">voir le blogroll</a>';
+        $alertMsg "Bonjour ".ucfirst($username).", tu peux maintenant <a href=\"/?page=chat\">voir le chat</a>";
         $this->addUser($username,$mail,$pass);
           
         // Il faut soit rediriger le user, soit faire toute la page en controller. 
-        // header("Refresh: 3; http://".$_SERVER['HTTP_HOST']."/");
+        header("Refresh: 3; http://".$_SERVER['HTTP_HOST']."/?page=chat");
       }
     }
   }
