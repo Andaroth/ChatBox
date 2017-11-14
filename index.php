@@ -14,7 +14,7 @@
     die('Error : '.$e->getMessage());
   }
 ?>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./View/css/style.css">

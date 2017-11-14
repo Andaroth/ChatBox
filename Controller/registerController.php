@@ -46,7 +46,7 @@
         $_SESSION["logged"] = 1;
         $_SESSION["username"] = $username;
         $_SESSION["user_id"] = intval(getUserId($username));
-        $alertMsg "Bonjour ".ucfirst($username).", tu peux maintenant <a href=\"/?page=chat\">voir le chat</a>";
+        $alertMsg = "Bonjour ".ucfirst($username).", tu peux maintenant <a href=\"/?page=chat\">voir le chat</a>";
         $this->addUser($username,$mail,$pass);
           
         // Il faut soit rediriger le user, soit faire toute la page en controller. 
