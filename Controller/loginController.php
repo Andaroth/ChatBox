@@ -29,7 +29,11 @@
       header("Refresh: 3; http://".$_SERVER['HTTP_HOST']."/?page=chat");
     }
     else {
-      $alertMsg = "Mot de passe ou nom d'utilisateur incorrect !";
+      if (!( (isset($_POST['username'])) && (isset($_POST['pass'])))) {
+          $alertMsg = "Veuillez vous connecter avec vos identifiants.";
+      } else {
+        $alertMsg = "Mot de passe ou nom d'utilisateur incorrect !";   
+      }
     }
   }
   public function run(){
