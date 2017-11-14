@@ -1,4 +1,5 @@
-<?php
+
+<!-- <?php
   /*session_start();
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -16,7 +17,17 @@
     echo "No user found. Please go <a href='./'>back</a> and enter the correct login.<br>";
     echo "You may register a new account by clicking <a href='./?page=register'>here</a>.";
   }*/
-?>
+?> -->
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+<div class="card">
   <div>
     <h2>Se connecter</h2>
     <p><?php echo $alertMsg; ?></p>
@@ -32,5 +43,8 @@
         </div>
       </div>
       <input type="submit" value="Connexion">
-    </form>
   </div>
+  </div>
+  </div>
+  </body>
+  </html>
