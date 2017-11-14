@@ -1,23 +1,3 @@
-<?php
-/*  if (isset($_POST['submit'])) {
-    $con = mysql_connect('localhost', 'root', '');
-    mysql_select_db('chatbox', $con);
-    $uname = $_POST['username'];
-    $pword = $_POST['password'];
-    $pword2 = $_POST['password2'];
-    if ($pword != $pword2) {
-      echo "Passwords do not match. <br>";
-    } else {
-      $checkexist = mysql_query("SELECT username FROM users WHERE username = '$uname'");
-      if (mysql_num_rows($checkexist)) {
-        echo "Username already exists, Please select other username.<br>";
-      } else {
-        mysql_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
-        echo "You are now registered. Click <a href='./'>here</a> to start chatting";
-      }
-    }
-  }*/
-?>
 <div>
   <h2>S'inscrire</h2>
   <form action="./?page=register" method="post" autocomplete="off">
