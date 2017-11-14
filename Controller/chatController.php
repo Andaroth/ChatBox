@@ -11,7 +11,7 @@
     } catch(Exception $e) {echo("Error getUserId : ".$e->getMessage());die();} 
   }
 
-  private function getUserById($thisID) {
+  public function getUserById($thisID) {
     global $DB;
     $do = "SELECT username FROM my_users WHERE ID = '".$thisID."'";
     try {
