@@ -93,7 +93,9 @@ form{
 }
 
 p {
-  visibility: hidden;
+  text-align: left;
+  width: 100%;
+  font-size: 1.3em;
 }
 
 label {
@@ -106,7 +108,7 @@ label {
   color:black;
   border: 1px teal solid;
   height: 225px;
-  width: 400px;
+  min-width: 600px;
   overflow: scroll;
   float:left;
 }
