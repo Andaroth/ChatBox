@@ -1,5 +1,6 @@
 <?php
   function getUserId($username) { 
+    global $DB;
     $do = "SELECT ID FROM my_users WHERE username = '".$username."'"; 
     try { 
       $try = $DB->query($do); $try = $try->fetch(); $try = $try[0]; 
