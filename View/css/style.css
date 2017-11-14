@@ -1,3 +1,42 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,
+body {
+background-image: url(https://contattafiles.s3-us-west-1.amazonaws.com/tnt14094/ZSLQrpi7Pg_nEgG/polygon-1600x900.png);
+color: #555;
+font-family: 'Lato', 'Arial', sans-serif;
+font-weight: 300;
+font-size: 20px;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;
+display: inline-block;
+
+}
+
+h2{
+margin-left: 100px;
+}
+
+.twocol{
+margin-top:100px;
+margin-left: 200px;
+text-align:center;
+text-transform: uppercase;
+}
+
+.register_username{
+display:50px;
+}
+
+.submit{
+margin-top: 100px;
+margin-left: 200px;
+margin-right: 200px;
+}
+
 html, body {
     height: 100%;
     width: 100%;
