@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 html,
 body {
-background-image: url(https://contattafiles.s3-us-west-1.amazonaws.com/tnt14094/ZSLQrpi7Pg_nEgG/polygon-1600x900.png);
+background-image: url("../img/bg2.png");
 color: #555;
 font-family: 'Lato', 'Arial', sans-serif;
 font-weight: 300;
@@ -16,23 +16,18 @@ display: inline-block;
 
 }
 
-h2{
-margin-left: 100px;
-}
-
-.twocol{
+/*.twocol{
 margin-top:100px;
 margin-left: 200px;
 text-align:center;
 text-transform: uppercase;
-}
+}*/
 
 .register_username{
 display:50px;
 }
 
 .submit{
-margin-top: 100px;
 margin-left: 200px;
 margin-right: 200px;
 }
@@ -47,7 +42,7 @@ html, body {
 .wrapper {
     height: 100%;
     width: 100%;
-    background-image: url("../img/bg.png");
+    /*background-image: url("../img/bg.png");*/
     background-position: center;
     background-size: cover;
     display: flex;
@@ -61,10 +56,10 @@ html, body {
     height: 400px;
     width: 850px;
     background: cadetblue; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, cadetblue, salmon); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, cadetblue, salmon); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, cadetblue, salmon); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, cadetblue, salmon); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, skyblue, lightpink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, skyblue, lightpink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, skyblue, lightpink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, skyblue, lightpink); /* Standard syntax */
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
@@ -74,7 +69,7 @@ html, body {
 }
 
 h2 {
-    height: 300px;
+    height: 50px;
     width: 750px;
 	color: #FFFFFF;
 	font: 900 96px 'Lobster', cursive;
@@ -88,7 +83,21 @@ h2 {
 }
 
 form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
 
+}
+
+p {
+  visibility: hidden;
+}
+
+label {
+  visibility: hidden;
 }
 
 #chatBox {
@@ -134,4 +143,18 @@ form{
   border: 1px teal solid;
   float:left;
   margin:1px;
+}
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
 }

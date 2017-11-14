@@ -5,12 +5,12 @@
       <p><?php echo $alertMsg; ?></p>
       <form action="./?page=register" method="post" autocomplete="off">
       <div class="twocol">
-        <div>
+        <!--<div>
           <label for="register_username">Nom d'utilisateur</label>
           <label for="register_mail">Votre e-mail</label>
           <label for="register_passOne">Mot de passe</label>
           <label for="register_passTwo">Confirmez</label>
-        </div>
+        </div>-->
         <div>
           <input class="clearform first inputupper" type="text" name="username" id="register_username" autocomplete="off" placeholder="username">
           <input class="clearform" type="text" name="mail" id="register_mail" autocomplete="off" placeholder="mail">
@@ -20,6 +20,7 @@
       </div>
       <input type="submit" class="submit" value="Inscription">
       </form>
+      <a href="./">&larr; retour</a>
     </div>
     </div>
     </div>
