@@ -2,9 +2,9 @@
   class registerController {
   public function __construct(){
       /*private function addUser($username,$mail,$pass) { 
-    global $db; 
+    global $DB; 
     try { 
-      $db->exec("INSERT INTO my_users (username,mail,pass) VALUES ('".$username."','".$mail."','".$pass."')"); 
+      $DB->exec("INSERT INTO my_users (username,mail,pass) VALUES ('".$username."','".$mail."','".$pass."')"); 
     } catch(Exception $e) {echo("Error addUser : ".$e->getMessage());die();}*/ 
   }
   }
