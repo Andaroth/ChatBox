@@ -35,6 +35,7 @@
     } catch(Exception $e) {echo("Error addChat : ".$e->getMessage());die();}
   }
   public function run(){
+    global $alertMsg;
     include View . 'chat.php';
   }
  }

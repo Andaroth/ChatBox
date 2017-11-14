@@ -62,6 +62,7 @@
     } catch(Exception $e) {echo("Error addUser : ".$e->getMessage());die();}
   }
   public function run(){
+    global $alertMsg;
     include View . 'register.php';
   }
   }
