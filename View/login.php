@@ -6,10 +6,6 @@
       <form action="./?page=login" method="post">
         <div class="twocol">
           <div>
-            <label for="login_username">Nom d'utilisateur</label>
-            <label for="login_pass">Mot de passe</label>
-          </div>
-          <div>
             <input class="clearform first inputupper" type="text" name="username" id="login_username" placeholder="username">
             <input class="clearform" type="password" name="pass" id="login_pass" placeholder="password">
           </div>
