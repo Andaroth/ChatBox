@@ -1,5 +1,5 @@
 <?php
-  if (isset($_POST['submit'])) {
+/*  if (isset($_POST['submit'])) {
     $con = mysql_connect('localhost', 'root', '');
     mysql_select_db('chatbox', $con);
     $uname = $_POST['username'];
@@ -16,25 +16,25 @@
         echo "You are now registered. Click <a href='./'>here</a> to start chatting";
       }
     }
-  }
+  }*/
 ?>
-
-    <form name="form1" action="./?page=register" method="post">
-      <table border="1" align="center">
-        <tr>
-          <td>Enter your Username: </td>
-          <td><input type="text" name="username"></td>
-        </tr>
-        <tr>
-          <td>Enter your Password: </td>
-          <td><input type="password" name="password"></td>
-        </tr>
-        <tr>
-          <td>Repeat your Password: </td>
-          <td><input type="password" name="password2"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><input type="submit" name="submit" value="Register"></td>
-        </tr>
-      </table>
-    </form>
+<div>
+  <h2>S'inscrire</h2>
+  <form action="./?page=register" method="post" autocomplete="off">
+    <div class="twocol">
+        <div>
+          <label for="register_username">Nom d'utilisateur</label>
+          <label for="register_mail">Votre e-mail</label>
+          <label for="register_passOne">Mot de passe</label>
+          <label for="register_passTwo">Confirmez</label>
+        </div>
+        <div>
+          <input class="clearform first inputupper" type="text" name="username" id="register_username" autocomplete="off" placeholder="username">
+          <input class="clearform" type="text" name="mail" id="register_mail" autocomplete="off" placeholder="mail">
+          <input class="clearform" type="password" name="passOne" id="register_passOne" autocomplete="off" placeholder="password">
+          <input class="clearform" type="password" name="passTwo" id="register_passTwo" autocomplete="off" placeholder="password (again)">
+        </div>
+    </div>
+    <input type="submit" value="Inscription">
+  </form>
+</div>
