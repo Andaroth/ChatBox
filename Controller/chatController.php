@@ -11,15 +11,6 @@
     } catch(Exception $e) {echo("Error getUserId : ".$e->getMessage());die();} 
   }
 
-  public function getUserById($thisID) {
-    global $DB;
-    $do = "SELECT username FROM my_users WHERE ID = '".$thisID."'";
-    try {
-      $try = $DB->query($do); $try = $try->fetch(); $try = $try[0];
-      return $try;
-    } catch(Exception $e) {echo("Error getUserById : ".$e->getMessage());die();}
-  }
-
   private function getTimePost($user_id) { 
     $do = "SELECT datepost FROM shoutbox WHERE user_id = '".$user_id."' ORDER BY id DESC"; 
     try { 
