@@ -8,7 +8,7 @@ html, body {
 .wrapper {
     height: 100%;
     width: 100%;
-    background-image: url("../img/bg.png");
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Flat-Design-Wallpapers-HD.png");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -50,49 +50,4 @@ h2 {
 
 form{
 
-}
-
-#chatBox {
-  font-family:tahoma;
-  font-size:12px;
-  color:black;
-  border: 1px teal solid;
-  height: 225px;
-  width: 400px;
-  overflow: scroll;
-  float:left;
-}
-
-#usersOnLine{
-  font-family:tahoma;
-  font-size:14;
-  color:orange;
-  border:1px teal solid;
-  width:150px;
-  height:225px;
-  overflow:scroll;
-  margin-left:1px;
-}
-
-#message {
-  width: 350px;
-  height: 22px;
-  border: 1px teal solid;
-  float:left;
-  margin-top:1px;
-}
-
-#send {
-  width: 50px;
-  height: 22px;
-  float:left;
-  margin:1px;
-}
-
-#serverRes{
-  width:150px;
-  height:22px;
-  border: 1px teal solid;
-  float:left;
-  margin:1px;
 }
