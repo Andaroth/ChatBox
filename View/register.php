@@ -1,34 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="view/css/style.css">
-    <title>Chatbox</title>
-  </head>
-
-  <body>
-    <?php
-      if (isset($_POST['submit'])) {
-        $con = mysql_connect('localhost', 'root', '');
-        mysql_select_db('chatbox', $con);
-        $uname = $_POST['username'];
-        $pword = $_POST['password'];
-        $pword2 = $_POST['password2'];
-        if ($pword != $pword2) {
-          echo "Passwords do not match. <br>";
-        } else {
-          $checkexist = mysql_query("SELECT username FROM users WHERE username = '$uname'");
-          if (mysql_num_rows($checkexist)) {
-            echo "Username already exists, Please select other username.<br>";
-          } else {
-            mysql_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
-            echo "You are now registered. Click <a href='./'>here</a> to start chatting";
-          }
-        }
+<?php
+  if (isset($_POST['submit'])) {
+    $con = mysql_connect('localhost', 'root', '');
+    mysql_select_db('chatbox', $con);
+    $uname = $_POST['username'];
+    $pword = $_POST['password'];
+    $pword2 = $_POST['password2'];
+    if ($pword != $pword2) {
+      echo "Passwords do not match. <br>";
+    } else {
+      $checkexist = mysql_query("SELECT username FROM users WHERE username = '$uname'");
+      if (mysql_num_rows($checkexist)) {
+        echo "Username already exists, Please select other username.<br>";
+      } else {
+        mysql_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
+        echo "You are now registered. Click <a href='./'>here</a> to start chatting";
       }
-    ?>
+    }
+  }
+?>
 
     <form name="form1" action="./?page=register" method="post">
       <table border="1" align="center">
@@ -49,5 +38,3 @@
         </tr>
       </table>
     </form>
-  </body>
-</html>
