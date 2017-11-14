@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./View/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abel%7CLobster" rel="stylesheet">
-    <title>Login</title>
+    <title>Chat Boîte</title>
   </head>
 
   <body>

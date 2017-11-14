@@ -16,10 +16,6 @@ display: inline-block;
 
 }
 
-h2{
-margin-left: 100px;
-}
-
 /*.twocol{
 margin-top:100px;
 margin-left: 200px;
@@ -93,8 +89,6 @@ form{
   flex-direction: column;
   text-align: center;
   width: 300px;
-  height: 100px;
-  padding-bottom: 50px;
 
 }
 
@@ -158,3 +152,9 @@ div{
   flex-direction: column;
 }
 
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}

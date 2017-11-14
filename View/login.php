@@ -10,6 +10,7 @@
         </div>
         <input type="submit" value="Connexion">
       </form>
+      <a href="./?page=register">S'enregistrer</a>
     </div>
     </div>
     </div>
