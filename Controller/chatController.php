@@ -4,11 +4,12 @@
     
   }
   private function getUserId($username) { 
-  $do = "SELECT ID FROM my_users WHERE username = '".$username."'"; 
-  try { 
-    $try = $DB->query($do); $try = $try->fetch(); $try = $try[0]; 
-    return $try; 
-  } catch(Exception $e) {echo("Error getUserId : ".$e->getMessage());die();} 
+    $do = "SELECT ID FROM my_users WHERE username = '".$username."'"; 
+    try { 
+      $try = $DB->query($do); $try = $try->fetch(); $try = $try[0]; 
+      return $try; 
+    } catch(Exception $e) {echo("Error getUserId : ".$e->getMessage());die();} 
+  }
 
   private function getUserById($thisID) {
     global $DB;
