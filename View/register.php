@@ -18,7 +18,7 @@
           <input class="clearform" type="password" name="passTwo" id="register_passTwo" autocomplete="off" placeholder="password (again)">
         </div>
       </div>
-      <input type="submit" value="Inscription">
+      <input type="submit" class="submit" value="Inscription">
       </form>
     </div>
     </div>
