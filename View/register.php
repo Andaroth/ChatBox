@@ -1,4 +1,6 @@
-<div>
+<div class="wrapper">
+    <div class="card">
+    <div>
       <h2>S'inscrire</h2>
       <p><?php echo $alertMsg; ?></p>
       <form action="./?page=register" method="post" autocomplete="off">
@@ -18,4 +20,6 @@
       </div>
       <input type="submit" value="Inscription">
       </form>
+    </div>
+    </div>
     </div>
