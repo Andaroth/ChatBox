@@ -33,27 +33,27 @@
           $alertMsg = "Les mots de passes ne correspondent pas";
           $fail++;
         }
-      }
-    
-      if ($fail==0) {
-        $username = strtolower(trim(htmlspecialchars($_POST["username"])));
-        $mail = $_POST["mail"];
-        $pass = hash("sha256", htmlspecialchars($_POST["passOne"]));
-        $select = $DB->query("SELECT COUNT(username) AS count FROM my_users WHERE username = '".$username."'");
-        $row = $select->fetch();
-        $count = $row['count'];
-        
-        if($count > 0) { 
-          $alertMsg = "Ce pseudo est déjà utilisé";
-        } else {
-          $_SESSION["logged"] = 1;
-          $_SESSION["username"] = $username;
-          $_SESSION["user_id"] = intval(getUserId($username));
-          $alertMsg = "Bonjour ".ucfirst($username).", tu peux maintenant <a href=\"/?page=chat\">voir le chat</a>";
-          $this->addUser($username,$mail,$pass);
           
-          // Il faut soit rediriger le user, soit faire toute la page en controller. 
-          header("Refresh: 3; http://".$_SERVER['HTTP_HOST']."/?page=chat");
+        if ($fail==0) {
+          $username = strtolower(trim(htmlspecialchars($_POST["username"])));
+          $mail = $_POST["mail"];
+          $pass = hash("sha256", htmlspecialchars($_POST["passOne"]));
+          $select = $DB->query("SELECT COUNT(username) AS count FROM my_users WHERE username = '".$username."'");
+          $row = $select->fetch();
+          $count = $row['count'];
+          
+          if($count > 0) { 
+            $alertMsg = "Ce pseudo est déjà utilisé";
+          } else {
+            $_SESSION["logged"] = 1;
+            $_SESSION["username"] = $username;
+            $_SESSION["user_id"] = intval(getUserId($username));
+            $alertMsg = "Bonjour ".ucfirst($username).", tu peux maintenant <a href=\"/?page=chat\">voir le chat</a>";
+            $this->addUser($username,$mail,$pass);
+            
+            // Il faut soit rediriger le user, soit faire toute la page en controller. 
+            header("Refresh: 3; http://".$_SERVER['HTTP_HOST']."/?page=chat");
+          }
         }
       }
     }
