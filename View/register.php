@@ -3,7 +3,7 @@
     <div>
       <h2>S'inscrire</h2>
       <p class="alert"><?php echo $alertMsg; ?></p>
-      <form action="./?page=register" method="post" autocomplete="off">
+      <form id="registerForm" action="./?page=register" method="post" autocomplete="off">
       <div class="twocol">
         <!--<div>
           <label for="register_username">Nom d'utilisateur</label>

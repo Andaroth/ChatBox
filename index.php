@@ -17,6 +17,7 @@
 
   <body>
     <?php include Controller . 'routerController.php'; ?>
+    <script src="./View/js/jquery.js"></script>
     <script type="text/javascript" src="./View/js/app.js"></script>
   </body>
 </html>

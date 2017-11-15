@@ -14,3 +14,33 @@ function hideShow(hs){
     signInName.innerHTML=signInForm.userName.value;
   }
 }
+
+$("#registerForm").submit(function(e) {
+   if (($("#register_username").val() == "") ||
+       ($("#register_mail").val() == "") ||
+       ($("#register_passOne").val() == "") ||
+       ($("#register_passTwo").val() == "") ||
+       ($("#register_passOne").val() != $("#register_passTwo").val())
+       )
+       {
+       e.preventDefault();
+       alert("Merci Bertrand");
+   }
+});
+
+$("#loginForm").submit(function(e) {
+   if (($("#login_username").val() == "") ||
+       ($("#login_pass").val() == ""))
+       {
+       e.preventDefault();
+       alert("Merci Bertrand");
+   }
+});
+
+$("#messageForm").submit(function(e) {
+   if ($("#message").val() == "")
+       {
+       e.preventDefault();
+       alert("Merci Bertrand");
+   }
+});
