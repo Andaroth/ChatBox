@@ -12,6 +12,6 @@ try {
   die('Error : '.$e->getMessage());
 }
 /* SQL Queries */ 
-$getChat = $DB->query("SELECT * FROM shoutbox ORDER BY datepost ASC LIMIT 10");
+$getChat = $DB->query("SELECT * FROM (SELECT * FROM shoutbox ORDER BY datepost DESC LIMIT 10) shoutbox ORDER BY shoutbox.datepost ASC");
 /* UI messages */
 $alertMsg = "";
